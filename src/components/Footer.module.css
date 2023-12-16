@@ -1,0 +1,9 @@
+/* --  start footer -- */
+.footer {
+    padding: 20px 0;
+	grid-area: footer;
+    text-align: center;
+    background-color: var(--section-bg);
+    color: #fff;
+}
+/* --  end footer -- */

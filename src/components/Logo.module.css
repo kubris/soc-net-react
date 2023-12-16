@@ -1,0 +1,14 @@
+/* --  start logo -- */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60px;
+    width: 100%;
+    height: auto;
+    transition: transform 2s ease-in;
+}
+.logo:hover {
+    transform: rotate(1080deg);
+}
+/* --  end logo -- */

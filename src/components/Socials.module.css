@@ -1,0 +1,18 @@
+/* --  start socials -- */
+.socials a > span + img {
+    display: none;
+    width: 30px;
+}
+@media screen and (max-width:575px){
+    .socials a > span {
+        display: none;
+    }
+    .socials a > span + img {
+        display: block;
+        transition: margin 0.2s ease-in;
+    }
+    .socials a > span + img:hover {
+        margin-top: -4px;
+    }
+}
+/* --  end socials -- */

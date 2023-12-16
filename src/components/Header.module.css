@@ -1,0 +1,30 @@
+/* --  start nav -- */
+.header {grid-area: header}
+.header > nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--section-bg);
+    color: #fff;
+}
+.header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+.header li {
+    display: inline-block;
+    line-height: 0;
+}
+.header li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: inherit;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in;
+}
+.header li a:hover {
+    color: var(--accent-color);
+}
+/* --  end nav -- */

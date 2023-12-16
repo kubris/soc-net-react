@@ -1,0 +1,62 @@
+:root {
+	--line-bg: repeating-linear-gradient(
+			90deg,
+			#e7e7e7,
+			#e7e7e7 20px,
+			#e4e4e4 20px,
+			#e4e4e4 40px
+	) no-repeat;
+	--section-bg: #222;
+	--light-bg: #eee;
+	--accent-color: #61dafb;
+	--aside-bg: #183c3a;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+body {
+	background: var(--line-bg);
+	font-size: clamp(12px, 2vw, 16px);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	monospace;
+}
+ul {
+	padding-inline-start: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img, svg {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+textarea,
+button {
+	border: none;
+	outline: none;
+	background-color: unset;
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+}
+textarea {resize: none}
+/* --  end page structure -- */
