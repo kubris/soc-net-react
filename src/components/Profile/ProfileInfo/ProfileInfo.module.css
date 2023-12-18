@@ -1,0 +1,44 @@
+/* --  start post info -- */
+.postInfo {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0 35px;
+}
+.postInfoText {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-right: 15px;
+    width: 100%;
+}
+.postInfoField {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    word-break: break-all;
+}
+.postInfoField > span {
+    display: inline-flex;
+    min-width: 100px;
+    width: 100px;
+    font-weight: 600;
+}
+.postInfoName {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+.postInfoAvatar {
+    width: 150px;
+}
+
+@media screen and (max-width:575px) {
+    .postInfo {
+        flex-direction: column;
+    }
+}@media screen and (max-width:420px) {
+    .postInfoField {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+/* --  end post info -- */

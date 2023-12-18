@@ -1,0 +1,28 @@
+/* --  start comment -- */
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content {
+    display: flex;
+    gap: 25px;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.times {
+    white-space: nowrap;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+.text {
+    padding-top: 5px;
+    width: 100%;
+}
+
+/* --  end comment -- */

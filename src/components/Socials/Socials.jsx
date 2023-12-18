@@ -1,7 +1,7 @@
 import React from 'react';
-import Telegram from '../images/tg.svg';
-import Whatsapp from '../images/ws.svg';
-import Github from '../images/gh.svg';
+import Telegram from '../../images/tg.svg';
+import Whatsapp from '../../images/ws.svg';
+import Github from '../../images/gh.svg';
 import cls from './Socials.module.css';
 const Socials = () => {
     return (

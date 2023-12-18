@@ -1,10 +1,10 @@
 import React from "react";
-import LogoImg from "../logo.svg";
+import LogoImg from "../../images/logo.svg";
 import cls from './Logo.module.css';
 const Logo = () => {
     return (
         <a className={cls.logo} href="#l">
-            <img src={LogoImg}/>
+            <img src={LogoImg} alt="Logo" />
         </a>
     );
 }

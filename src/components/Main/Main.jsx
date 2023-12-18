@@ -1,10 +1,10 @@
 import React from 'react';
-import Post from "./Post";
+import Profile from "../Profile/Profile";
 import cls from './Main.module.css';
 const Main = () => {
     return (
         <main className={cls.main}>
-            <Post />
+            <Profile />
         </main>
     );
 }

@@ -1,0 +1,39 @@
+/* --  start add post -- */
+.postFormBlock {
+    border-style: none;
+}
+.postFormBlock legend {
+    font-size: 1.4em;
+}
+.postFormBlock textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #ddd;
+}
+.postFormSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 8px;
+    max-width: 100px;
+    width: 100%;
+    line-height: 1;
+    color: #fff;
+    background-color: var(--aside-bg);
+    transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+    cursor: pointer;
+}
+.postFormSubmit:hover {
+    background-color: var(--accent-color);
+    box-shadow: 3px 3px 10px var(--aside-bg);
+}
+@media screen and (max-width:575px) {
+    .postFormBlock {
+        padding: 0;
+    }
+}
+/* --  end add post -- */

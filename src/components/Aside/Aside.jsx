@@ -1,9 +1,9 @@
 import React from "react";
-import ProfileImg from "../images/profile.svg";
-import MessageImg from "../images/message.svg";
-import NewsImg from "../images/news.svg";
-import MusicImg from "../images/music.svg";
-import SettingsImg from "../images/settings.svg";
+import ProfileImg from "../../images/profile.svg";
+import MessageImg from "../../images/message.svg";
+import NewsImg from "../../images/news.svg";
+import MusicImg from "../../images/music.svg";
+import SettingsImg from "../../images/settings.svg";
 import cls from './Aside.module.css';
 const Aside = () => {
     return (

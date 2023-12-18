@@ -1,0 +1,9 @@
+/* --  start comment avatar -- */
+.avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* --  end comment avatar -- */
