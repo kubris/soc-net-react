@@ -1,9 +1,19 @@
 /* --  start comment avatar -- */
+.block {
+    min-width: 55px;
+    text-align: center;
+}
 .avatar {
+    display: inline-block;
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    overflow: hidden;
+}
+.times {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0.6rem;
+    font-weight: 600;
 }
 /* --  end comment avatar -- */
