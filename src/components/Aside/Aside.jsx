@@ -10,23 +10,23 @@ const Aside = () => {
         <aside className={cls.aside}>
             <nav>
                 <ul>
-                    <li><a href="#s">
+                    <li><a href="/profile">
                         <span>Profile</span>
                         <img src={ProfileImg} alt="Profile"/>
                     </a></li>
-                    <li><a href="#s">
+                    <li><a href="/dialogs">
                         <span>Messages</span>
                         <img src={MessageImg} alt="Messages"/>
                     </a></li>
-                    <li><a href="#s">
+                    <li><a href="/news">
                         <span>News</span>
                         <img src={NewsImg} alt="News"/>
                     </a></li>
-                    <li><a href="#s">
+                    <li><a href="/music">
                         <span>Music</span>
                         <img src={MusicImg} alt="Music"/>
                     </a></li>
-                    <li><a className={cls.settings} href="#s">
+                    <li><a className={cls.settings} href="/settings">
                         <span>Settings</span>
                         <img src={SettingsImg} alt="Settings"/>
                     </a></li>
