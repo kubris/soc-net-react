@@ -5,31 +5,42 @@ import NewsImg from "../../images/news.svg";
 import MusicImg from "../../images/music.svg";
 import SettingsImg from "../../images/settings.svg";
 import cls from './Aside.module.css';
+import {NavLink} from "react-router-dom";
 const Aside = () => {
     return (
         <aside className={cls.aside}>
             <nav>
                 <ul>
-                    <li><a href="/profile">
-                        <span>Profile</span>
-                        <img src={ProfileImg} alt="Profile"/>
-                    </a></li>
-                    <li><a href="/dialogs">
-                        <span>Messages</span>
-                        <img src={MessageImg} alt="Messages"/>
-                    </a></li>
-                    <li><a href="/news">
-                        <span>News</span>
-                        <img src={NewsImg} alt="News"/>
-                    </a></li>
-                    <li><a href="/music">
-                        <span>Music</span>
-                        <img src={MusicImg} alt="Music"/>
-                    </a></li>
-                    <li><a className={cls.settings} href="/settings">
-                        <span>Settings</span>
-                        <img src={SettingsImg} alt="Settings"/>
-                    </a></li>
+                    <li>
+                        <NavLink to="/profile" activeClassName={cls.active}>
+                            <span>Profile</span>
+                            <img src={ProfileImg} alt="Profile"/>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/dialogs" activeClassName={cls.active}>
+                            <span>Messages</span>
+                            <img src={MessageImg} alt="Messages"/>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/news" activeClassName={cls.active}>
+                            <span>News</span>
+                            <img src={NewsImg} alt="News"/>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/music" activeClassName={cls.active}>
+                            <span>Music</span>
+                            <img src={MusicImg} alt="Music"/>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={cls.settings} to="/settings" activeClassName={cls.active}>
+                            <span>Settings</span>
+                            <img src={SettingsImg} alt="Settings"/>
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </aside>

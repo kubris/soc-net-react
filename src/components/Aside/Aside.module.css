@@ -28,10 +28,17 @@
 .aside a:hover {
     background-color: #14a5cd;
 }
-.aside .settings {
+.active {
+    background-color: #00708f;
+}
+.settings {
     margin-top: 20px;
 }
-.aside .settings:hover {
+.settings.active {
+    background-color: #db511e;
+}
+.aside .settings:hover,
+.settings.active:hover{
     background-color: orangered;
 }
 @media screen and (max-width:575px) {

@@ -6,10 +6,12 @@
 			#e4e4e4 20px,
 			#e4e4e4 40px
 	) no-repeat;
-	--section-bg: #222;
-	--light-bg: #eee;
 	--accent-color: #00c5ba;
-	--aside-bg: #183c3a;
+	--accent-color-red: #ff5200;
+	--section-bg: #130e0a;
+	--light-bg: #ebede7;
+	--aside-bg: #183c23;
+	--field-bg: #f2f3ed;
 }
 *,
 *::before,
@@ -17,6 +19,10 @@
 	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
+}
+html {
+	width: 100vw;
+	overflow-x: hidden;
 }
 html, body {
 	box-sizing: border-box;
