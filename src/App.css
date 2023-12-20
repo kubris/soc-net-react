@@ -1,4 +1,5 @@
-.pageWrapper {
+/* --  start page structure -- */
+.page-wrapper {
 	display: grid;
 	grid-template-columns: 140px 1fr;
 	grid-template-rows: auto 1fr auto;
@@ -10,10 +11,18 @@
 	max-width: 1000px;
 	margin: 0 auto;
 }
+.main {
+	padding: 10px;
+	background-color: var(--light-bg);
+	grid-area: main;
+}
 /* --  end page structure -- */
 
 @media screen and (max-width:575px) {
-	.pageWrapper {
+	.page-wrapper {
 		grid-template-columns: 1fr;
+	}
+	.main {
+		padding: 0 10px;
 	}
 }
