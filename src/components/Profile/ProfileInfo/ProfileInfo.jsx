@@ -1,35 +1,26 @@
 import React from "react";
 import cls from './ProfileInfo.module.css';
-import UnknownUser from "../../../images/unknown.jpg";
-import ManUser from "../../../images/man.jpg";
-import WomanUser from "../../../images/woman.jpg";
 import Admin from "../../../images/developer.jpg";
-const ProfileInfo = () => {
-    let hasImage= 0;
+import Beauty from "../../../images/beauty.jpg";
+const ProfileInfo = (props) => {
     return (
         <div className={cls.postInfo}>
             <div className={cls.postInfoAvatar}>
-                {hasImage === 1 ? <img src={ManUser} alt="Man user" /> :
-                    hasImage === 2 ? <img src={WomanUser} alt="Woman user" /> :
-                        hasImage === 3 ? <img src={UnknownUser} alt="Unknown user" /> :
-                            <img src={Admin} alt="Admin" />
-                }
+                <img src={props.infoData.avatar === "Admin" ? Admin : Beauty} alt="Admin" />
             </div>
             <div className={cls.postInfoText}>
-                <div className={cls.postInfoName}>
-                    Andrey M.
-                </div>
+                <div className={cls.postInfoName}> {props.infoData.name}</div>
                 <div className={`${cls.postInfoField} ${cls.postInfoBorned}`}>
-                    <span>Date of Birth:</span> 8 january
+                    <span>Date of Birth:</span>{props.infoData.borned}
                 </div>
                 <div className={`${cls.postInfoField} ${cls.postInfoCity}`}>
-                    <span>City:</span> SnK
+                    <span>City:</span>{props.infoData.city}
                 </div>
                 <div className={`${cls.postInfoField} ${cls.postInfoEducation}`}>
-                    <span>Education:</span> KubGTU
+                    <span>Education:</span>{props.infoData.edu}
                 </div>
                 <div className={`${cls.postInfoField} ${cls.postInfoWebsite}`}>
-                    <span>Web Site:</span> https://kubris.github.io/portfolio/
+                    <span>Web Site:</span>{props.infoData.webSite}
                 </div>
             </div>
         </div>

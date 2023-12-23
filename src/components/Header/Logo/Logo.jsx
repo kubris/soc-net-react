@@ -1,5 +1,5 @@
 import React from "react";
-import LogoImg from "../../images/logo.svg";
+import LogoImg from "./../../../images/logo.svg";
 import cls from './Logo.module.css';
 const Logo = () => {
     return (

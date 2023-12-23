@@ -1,0 +1,19 @@
+/* --  start DialogsItem -- */
+.dialog {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
+    height: 50px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.dialog.active {
+    color: var(--accent-color-red);
+    font-weight: 600;
+}
+
+.dialog:hover {
+    background-color: var(--accent-color-red);
+    color: #fff;
+}
+/* --  end DialogsItem -- */

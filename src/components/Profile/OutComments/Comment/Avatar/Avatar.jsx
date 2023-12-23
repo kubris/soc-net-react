@@ -1,5 +1,5 @@
 import React from "react";
-import Admin from "../../../../../../images/developer.jpg";
+import Admin from "../../../../../images/developer.jpg";
 import cls from './Avatar.module.css';
 const Avatar = (props) => {
     return (
