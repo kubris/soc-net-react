@@ -7,13 +7,14 @@
     transition: color 0.2s, background-color 0.2s;
 }
 
-.dialog.active {
-    color: var(--accent-color-red);
-    font-weight: 600;
-}
-
 .dialog:hover {
     background-color: var(--accent-color-red);
     color: #fff;
+}
+
+.dialog.active {
+    background-color: var(--aside-bg);
+    color: var(--accent-color);
+    font-weight: 600;
 }
 /* --  end DialogsItem -- */

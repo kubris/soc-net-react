@@ -3,13 +3,8 @@ import cls from './Message.module.css';
 import MessageItem from "./MessageItem/MessageItem";
 
 const Message = (props) => {
-    let messages = [
-        { id: 1, text: 'Hi, bro!' },
-        { id: 2, text: 'How are you?' },
-        { id: 3, text: 'What are you doing?' },
-    ]
 
-    let messagesElements = messages
+    let messagesElements = props.messages
         .map( m => <MessageItem text={m.text} />);
 
     return(

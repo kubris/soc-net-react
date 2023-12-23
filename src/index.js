@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import state from "./redux/state";
+/*
 const comments = [
     {   "id": 1,
         "messageContent": { "text": "I must to beat The React! Spartaaa!!!", "likes":12 },
@@ -42,7 +43,7 @@ const userInfo = [
         "webSite": "-"
     }
 ];
-const dialogs = [
+const dialogs  = [
     { id: 1, name: 'Andrey' },
     { id: 2, name: 'Olesia' },
     { id: 3, name: 'Mark' },
@@ -52,8 +53,13 @@ const dialogs = [
     { id: 7, name: 'Nikolay' },
     { id: 8, name: 'Natalia' },
 ];
-
-ReactDOM.render(<App comments={comments} userInfo={userInfo} dialogs={dialogs} />, document.getElementById('root'));
+const messages = [
+    { id: 1, text: 'Hi, bro!' },
+    { id: 2, text: 'How are you?' },
+    { id: 3, text: 'What are you doing?' },
+];
+*/
+ReactDOM.render(<App state={state} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

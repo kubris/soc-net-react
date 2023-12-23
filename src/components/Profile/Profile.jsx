@@ -8,9 +8,9 @@ const Profile = (props) => {
     return (
         <section className={cls.post}>
             <ProfileImg />
-            <ProfileInfo infoData={props.userInfo[0]} />
+            <ProfileInfo infoData={props.state.userInfo[0]} />
             <AddPost />
-            <OutComments commentsData={props.comments} />
+            <OutComments commentsData={props.state.comments} />
         </section>
     );
 }
