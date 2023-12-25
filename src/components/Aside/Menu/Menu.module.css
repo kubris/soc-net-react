@@ -1,0 +1,54 @@
+/* --  start Menu -- */
+.menuList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+}
+.menuList li {
+    display: block;
+    width: 100%;
+}
+.menuList a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    transition: background-color 0.2s ease-in;
+}
+.menuList a img {
+    width: 20px;
+    order: -1;
+}
+.menuList a:hover {
+    background-color: #14a5cd;
+}
+.active {
+    background-color: #00708f;
+}
+.settings {
+    margin-top: 20px;
+}
+.settings.active {
+    background-color: #b55e3e;
+}
+.menuList .settings:hover,
+.settings.active:hover{
+    background-color: orangered;
+}
+@media screen and (max-width:575px) {
+    .menuList {
+        gap: 0;
+        align-items: center;
+    }
+
+    .menuList a {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .menuList a > span {
+        display: none;
+    }
+}
+/* --  end Menu -- */

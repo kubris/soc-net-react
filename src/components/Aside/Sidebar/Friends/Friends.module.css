@@ -1,0 +1,17 @@
+/* --  start Friends -- */
+.friends {
+    padding: 30px 15px 0;
+}
+
+.friends h3 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.friendsList {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+/* --  end Friends -- */

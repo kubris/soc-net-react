@@ -1,0 +1,28 @@
+/* --  start MessageItem -- */
+.messageItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background-color: #183c2311;
+    border-radius: 5px;
+}
+
+.messageItem img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.messageItem + div {
+    margin-top: 5px;
+}
+
+.messageItem:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.own {
+    flex-direction: row-reverse;
+}
+/* --  end MessageItem -- */

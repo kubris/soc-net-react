@@ -1,0 +1,22 @@
+/* --  start Friends -- */
+.friendsLink {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.friendsLink:hover img {
+    box-shadow: 0 0 15px #fff, 0 0 5px 1px var(--accent-color-red);
+}
+
+.friendsLink img {
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.friendsLink span {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* --  end Friends -- */

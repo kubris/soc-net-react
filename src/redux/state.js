@@ -60,5 +60,21 @@ const state = {
             { id: 3, text: 'What are you doing?' },
         ],
     },
+    sidebar: {
+        friendsOnline: [
+            {
+                "id": 2,
+                "name": "Olesia"
+            },
+            {
+                "id": 3,
+                "name": "Mark"
+            },
+            {
+                "id": 4,
+                "name": "Nikita"
+            }
+        ],
+    }
 }
 export default state;
