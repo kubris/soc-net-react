@@ -1,9 +1,14 @@
 /* --  start nav -- */
-.header {grid-area: header}
+.header {
+    grid-area: header;
+    height: 10vh;
+}
 .header > nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
     background-color: var(--section-bg);
     color: #fff;
 }

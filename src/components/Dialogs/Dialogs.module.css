@@ -2,8 +2,41 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    padding: 10px 0 10px 10px;
+    height: 100%;
+}
+.dialogItems {
+    height: 100%;
+    overflow-y: auto;
 }
 .dialogItems li:nth-child(even) {
     background-color: #ddd;
+}
+.messageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+}
+.addMessageWrapper {
+    display: flex;
+    margin: 10px ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #aaa;
+}
+.addMessageWrapper textarea {
+    width: 100%;
+}
+.addMessageButton {
+    display: block;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.addMessageButton:hover {
+    transform: scale(0.98);
 }
 /* --  end Dialogs -- */
