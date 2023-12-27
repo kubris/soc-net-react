@@ -1,11 +1,12 @@
 import React from "react";
 import cls from './AddPost.module.css';
-const AddPost = () => {
+const AddPost = (props) => {
 
     let newPostElement = React.createRef();
 
-    let addPostEl = () => {
-        alert(newPostElement.current.value);
+    let addPostText = () => {
+        let text = newPostElement.current.value;
+        props.addPost(text);
     }
 
     return (
@@ -19,7 +20,7 @@ const AddPost = () => {
                     rows="4" cols="50"
                     placeholder="your news...">
                 </textarea>
-                <button onClick={ addPostEl } className={cls.postFormSubmit} >
+                <button onClick={addPostText} className={cls.postFormSubmit} >
                     Send
                 </button>
             </form>

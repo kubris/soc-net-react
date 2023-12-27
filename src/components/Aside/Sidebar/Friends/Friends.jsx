@@ -4,7 +4,7 @@ import FriendOnline from "./FriendOnline/FriendOnline";
 
 const Friends = (props) => {
     let friendsOnline = props.state.friendsOnline
-        .map( f => <FriendOnline name={f.name} id={f.id} />);
+        .map( f => <FriendOnline name={f.name} id={f.id} key={f.id}/>);
     return (
         <div className={cls.friends}>
             <h3>Friends online</h3>

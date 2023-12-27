@@ -7,7 +7,7 @@ import DialogsSvg from "./../../images/send.svg";
 const Dialogs = (props) => {
 
     let dialogsElements = props.state.dialogs
-        .map( d => <DialogItem name = {d.name} id={d.id} /> );
+        .map( d => <DialogItem name = {d.name} id={d.id} key={d.id} /> );
 
     return(
         <div className={cls.dialogs}>
